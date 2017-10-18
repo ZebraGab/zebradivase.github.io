@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <!-- <link rel="stylesheet" href="animate.css"> -->
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <title>Devise</title>
+  </head>
+  <body>
+    <header class="main_header">
+      <div class="container">
+
+        <div class="background">
+
+          <div class="cont">
+  <a class="logotype" href="">DEVICE</a>
+            <div class="container_content">
+              <div class="header_container_left">
+                <div class="search">
+                  <img src="./img/search.svg" height="17px" alt="loope">
+                  <input type="text" name="search_by_web" placeholder="Поиск по сайту">
+              </div>
+              <div class="catalog" onclick="openMenu('menu');return(false)">
+                  <a href="#"  >Каталог товаров</a>
+                  <img src="./img/icon-plus.png" height="15"  alt="plus">
+              </div>
+              <div id="menu">
+                  <div id="v-menu" class="v-menu" >
+                    <div class="itm">
+                      <div><a href="#">Виртуальная реальность</a></div>
+                      <div><a href="#">Моноподы для селфи</a></div>
+                      <div><a href="#">Экшн камеры</a></div>
+                    </div>
+                    <div class="itm2">
+                      <div><a href="#">Фитнес браслеты</a></div>
+                      <div><a href="#">Умные часы</a></div>
+                    </div>
+                    <div class="itm3">
+                      <div><a href="#">Квадрокоптеры</a></div>
+                    </div>
+
+                </div>
+              </div>
+            </div>
+
+              <div class="header_container_right">
+                <div class="upper_stroke">
+                  <div class="enter">
+                    <img src="./img/user.svg" alt="icon">
+                    <a href="#">Войти</a>
+                  </div>
+                  <div class="choose">
+                    <img src="./img/compare.svg" height="14px" alt="crown">
+                    <a href="#">Сравнить</a>
+                  </div>
+                  <div class="my_goods">
+                    <img src="./img/cart.svg" alt="basket">
+                    <a href="#">Корзина</a>
+                  </div>
+                </div>
+                <div class="down_stroke">
+                  <div class="delivery">
+                    <a href="#">Доставка</a>
+                  </div>
+                  <div class="garanty">
+                    <a href="#">Гарантия</a>
+                  </div>
+                  <div class="сontakts">
+                    <a href="#">Контакты</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="sliders_all">
+          <div id="slider" class="slider container">
+            <div class="left_slider">
+              <img src="./img/pic1.png" height="420" alt="">
+            </div>
+            <div class="right_slider">
+              <div class="header_slider">
+                <p class="text">01</p>
+                <div class="text_slider">
+                  <p>Делай селфи,<br> как Бен Стиллер!</p>
+                </div>
+              </div>
+          <div class="about">
+            <p>Самая длинная палка для селфи доступна в нашем магазине <br>
+               Восемь (восемь, Карл!) метров длиной и весом всего 5 килограмм.
+            </p>
+          </div>
+          <div class="button_slider">
+            <div class="back_orange">
+              <div class="back">
+                <a href="#">Подробнее</a>
+              </div>
+            </div>
+            <div class="slider_pages">
+              <img class="firs_img" src="./img/slider-button-full.svg" width="11" height="11" alt="">
+              <a href="#"><img class="seconde_img" src="./img/slider-button-empty.svg" width="11" height="11" alt="" onclick="slide(1)"></a>
+              <img class="third_img" src="./img/slider-button-empty.svg" width="11" height="11" alt="" onclick="slide(++1)">
+            </div>
+          </div>
+          <div class="char_all">
+            <div class="char">
+              <span>8,5 м</span>
+              <p>длинна палки</p>
+            </div>
+            <div class="char">
+              <span>5 кг</span>
+              <p>вес палки</p>
+            </div>
+            <div class="char">
+              <span>Карбон</span>
+              <p>Материал</p>
+            </div>
+          </div>
+            </div>
+          </div>
+
+          <div id="slider" class="slider2 container">
+            <div class="left_slider">
+              <img src="./img/slider-image2.png" height="420" alt="">
+            </div>
+            <div class="right_slider">
+              <div class="header_slider">
+                <p class="text">02</p>
+                <div class="text_slider">
+                  <p>Худеем<br> правильно!</p>
+                </div>
+              </div>
+          <div class="about">
+            <p>Мотивирующие фитнес-браслеты помогут найти в себе силы <br>
+               не пропускать занятия и соблюдать диету.
+            </p>
+          </div>
+          <div class="button_slider">
+            <div class="back_orange">
+              <div class="back">
+                <a href="#">Подробнее</a>
+              </div>
+            </div>
+            <div class="slider_pages">
+              <img class="firs_img" src="./img/slider-button-empty.svg" width="11" height="11" alt="" onclick="slide(-1)">
+              <img class="seconde_img" src="./img/slider-button-full.svg" width="11" height="11" alt="">
+              <img class="third_img" src="./img/slider-button-empty.svg" width="11" height="11" alt="" onclick="slide(1)">
+            </div>
+          </div>
+          <div class="char_all">
+            <div class="char">
+              <span>48 часов</span>
+              <p>Без зарядки</p>
+            </div>
+          </div>
+            </div>
+          </div>
+
+          <div id="slider" class="slider3 container">
+            <div class="left_slider">
+              <img src="./img/slider-image2.png" height="420" alt="">
+            </div>
+            <div class="right_slider">
+              <div class="header_slider">
+                <p class="text">02</p>
+                <div class="text_slider">
+                  <p>Худеем<br> правильно!</p>
+                </div>
+              </div>
+          <div class="about">
+            <p>Мотивирующие фитнес-браслеты помогут найти в себе силы <br>
+               не пропускать занятия и соблюдать диету.
+            </p>
+          </div>
+          <div class="button_slider">
+            <div class="back_orange">
+              <div class="back">
+                <a href="#">Подробнее</a>
+              </div>
+            </div>
+            <div class="slider_pages">
+              <img class="firs_img" src="./img/slider-button-empty.svg" width="11" height="11" alt="" onclick="slide(-1)">
+              <img class="seconde_img" src="./img/slider-button-full.svg" width="11" height="11" alt="">
+              <img class="third_img" src="./img/slider-button-empty.svg" width="11" height="11" alt="" onclick="slide(1)">
+            </div>
+          </div>
+          <div class="char_all">
+            <div class="char">
+              <span>48 часов</span>
+              <p>Без зарядки</p>
+            </div>
+          </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+
+
+    </header>
+    <main class="container" >
+      <div class="popular">
+        <div class="popular_block">
+          <div class="pop_element">
+            <img src="./img/popular-1.svg" width="100" height="58" alt="">
+          </div>
+          <p>Виртуальная реальность</p>
+        </div>
+        <div class="popular_block">
+          <div class="pop_element el2">
+          <img src="./img/popular-2.svg" width="90" height="123" alt="">
+        </div>
+        <p>Моноподы для селфи</p>
+       </div>
+        <div class="popular_block">
+          <div class="pop_element">
+          <img src="./img/popular-3.svg" width="76" height="89" alt="">
+        </div>
+        <p>Экшн-камеры</p>
+      </div>
+        <div class="popular_block">
+          <div class="pop_element">
+          <img src="./img/popular-4.svg" width="110" height="70" alt="">
+        </div>
+        <p>Фитнес-браслеты</p>
+      </div>
+        <div class="popular_block">
+          <div class="pop_element">
+          <img src="./img/popular-5.svg" width="60" height="110" alt="">
+        </div>
+        <p>Умные часы</p>
+      </div>
+        <div class="popular_block">
+          <div class="pop_element">
+          <img src="./img/poppular-6.svg" width="134" height="70" alt="">
+        </div>
+        <p>Квадрокоптеры</p>
+      </div>
+      </div>
+
+    </main >
+    <div class="description">
+      </div>
+      <div class="container">
+        <div class="description_all">
+          <div class="description_left">
+            <div class="description_menu">
+              <div class="about_that">
+                <div class="background_about">
+                </div>
+                <div class="text_about">
+                  <p>ДОСТАВКА</p>
+                </div>
+
+              </div>
+              <div class="about_that">
+                <div class="background_about">
+                </div>
+                <div class="text_about2">
+                  <p>ГАРАНТИЯ</p>
+                </div>
+              </div>
+              <div class="about_that">
+                <div class="background_about">
+                </div>
+                <div class="text_about3">
+                  <p>КРЕДИТ</p>
+                </div>
+              </div>
+            </div>
+            <div class="line">
+            </div>
+          </div>
+          <div class="description_right animated fadeIn">
+            <div class="left_side">
+              <div class="title">
+                <p>ДОСТАВКА</p>
+              </div>
+              <div class="left_text">
+                <p>Мы с удовольствием доставим ваш товар прямо к вашему <br>
+                  подъезду совершенно бесплатно! Ведь мы неплохо <br>
+                  заработаем, поднимая его на ваш этаж.</p>
+              </div>
+            </div>
+            <div class="right_side">
+              <img src="./img/delivery.svg" width="140" height="160" alt="">
+            </div>
+
+          </div>
+
+          <div class="description_right2 animated fadeIn">
+            <div class="left_side">
+              <div class="title">
+                <p>ГАРАНТИЯ</p>
+              </div>
+              <div class="left_text">
+                <p>Если из-за возгорания купленного у нас товара у вас сгорит<br>
+                  дом - не переживайте, мы выдадим вам новый. <br>
+                  Товар, не дом, конечно же.</p>
+              </div>
+            </div>
+            <div class="right_side">
+              <img src="./img/warranty.svg" width="140" height="160" alt="">
+            </div>
+
+          </div>
+          <div class="description_right3 animated fadeIn">
+            <div class="left_side">
+              <div class="title">
+                <p>КРЕДИТ</p>
+              </div>
+              <div class="left_text">
+                <p>Залезть в долговую яму стало еще проще! Кредитные <br>
+                  консультанты подберут для вас наиболее выгодные  <br>
+                  условия кредита. Выгодные для нашего банка, разумеется.</p>
+              </div>
+            </div>
+            <div class="right_side">
+              <img src="./img/credit.svg" width="140" height="160" alt="">
+            </div>
+
+          </div>
+        </div>
+      </div>
+    <div class="partners container">
+      <div class="partner">
+        <a href="#"><img src="./img/logo-1.png" alt=""></a>
+      </div>
+      <div class="partner">
+        <a href="#"><img src="./img/logo-3.png" alt=""></a>
+      </div>
+      <div class="partner">
+        <a href="#"><img src="./img/logo-4.png" alt=""></a>
+      </div>
+      <div class="partner">
+        <a href="#"><img src="./img/logo-5.png" alt=""></a>
+      </div>
+    </div>
+    <div class="info container">
+      <div class="left_info">
+        <div class="line_up">
+        </div>
+        <div class="title">
+          <p>О нас</p>
+        </div>
+        <div class="text">
+          <p>Огромный выбор гаджетов не оставит равнодушным гика,<br>
+             который есть в каждом из нас.</p>
+        </div>
+        <div class="text" style="margin-top: 30px;">
+          <p>Мы можем доставить ваш товар в самые отдаленные точки<br>
+             России! DEVICE работаетсо многими транспортными компаниями.</p>
+        </div>
+        <ul>
+          <li style="list-style: circle;">Деловые Линии</li>
+          <li style="list-style: circle">Автотрейдинг</li>
+          <li style="list-style: circle">ЖелДорЭкспедиция</li>
+        </ul>
+        <div class="btn">
+          <div class="btn_background">
+            <p>ПОДРОБНЕЙ О НАС</p>
+          </div>
+        </div>
+      </div>
+      <div class="right_info">
+        <div class="line_up">
+        </div>
+        <div class="title">
+          <p>Контакты</p>
+        </div>
+        <div class="text">
+          <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете<br>
+             проверить работосособность покупки. Всякое бывает.</p>
+        </div>
+        <div class="map">
+          <!-- <img src="./img/map.png" alt=""> -->
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9005.933371035937!2d31.45273175087966!3d55.645801738397026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46cf541995db4207%3A0xdcd748c016161e00!2z0KHQtdC70LXQt9C90LgsINCh0LzQvtC70LXQvdGB0LrQsNGPINC-0LHQuy4sINCg0L7RgdGB0LjRjywgMjE2Mjgw!5e0!3m2!1sru!2sby!4v1507021642994" width="560" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+        <div class="btn2">
+          <div class="btn_background2">
+            <p>НАПИШИТЕ НАМ</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="footer__background">
+        <div class="footer-block container">
+          <div class="footer_left-block">
+            <a href="#">DEVICE</a>
+            <p>г. Москва, ул. Строителей, 15</p>
+            <div class="footer_left-block__line">
+
+            </div>
+          </div>
+          <div class="footer_center-block">
+            <div class="footer_center-block_items">
+              <a href="#">ДОСТАВКА</a>
+              <a href="#">ГАРАНТИЯ</a>
+              <a href="#">КОНТАКТЫ</a>
+            </div>
+            <div class="footer_center-block_social">
+              <a class="itm animated pulse" href="#"><img src="./img/fb.svg" alt="fb"></a>
+              <a class="itm animated pulse" href="#"><img src="./img/inst.svg" alt="inst"></a>
+              <a class="itm animated pulse" href="#"><img src="./img/twit.svg" alt="twitter"></a>
+            </div>
+          </div>
+          <div class="footer_right-block">
+            <div class="footer_right-block_items">
+              <div class="footer_right-block_items_item itm_1 ">
+                <img src="./img/icon-user2.png" height="14px" alt="">
+                <p>Войти</p>
+              </div>
+              <div class="footer_right-block_items_item itm_2">
+                <img src="./img/icon-compare2.png" height="14px" alt="">
+                <p>Сравнить</p>
+              </div>
+              <div class="footer_right-block_items_item itm_3">
+                <img src="./img/icon-basket2.png" height="14px" alt="">
+                <p>Корзина</p>
+              </div>
+            </div>
+            <div class="footer_right-block_telephone">
+              <p>Тел: +7(495)555 75 95</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+<script type="text/javascript">
+  var id_menu = new Array('menu');
+  startList = function allclose() {
+    for (i=0;i < id_menu.lenght; i++){
+      document.getElementById(id_menu[i]).style.display = "none";
+    }
+  }
+    function openMenu(id){
+      for (i=0; i < id_menu.lenght; i++){
+        if (id != id_menu[i]){
+          document.getElementById(id_menu[i]).style.display = "none";
+        }
+      }
+      if (document.getElementById(id_menu[i]).style.display == "block"){
+        document.getElementById(id_menu[i]).style.display = "none";
+      }else{
+        document.getElementById(id_menu[i]).style.display = "block"
+      }
+    }
+    window.onload=startList;
+</script>
+
+<script
+src="https://code.jquery.com/jquery-3.2.1.js"
+integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+crossorigin="anonymous"></script>
+<script src="index.js"></script>
+
+  </body>
+</html>
